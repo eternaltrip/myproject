@@ -1,0 +1,11 @@
+处理对象()          抽象基类()                           节点流(文件流)                       缓冲流(主要使用的，效率较高。)
+处理文件.          InputStream                       FileInputStream                  BufferedInputStream
+处理文件.          OutputStream                      FileOutputStream                 BufferedOutputStream(flush())
+处理文本.          Reader                            FileReader                       BufferedReader(readLine())
+处理文本.          Writer                            FileWriter                       BufferedWriter(flush())
+
+
+特殊流--转换流(是一个中间件，字节流和字符流相互的转换)
+InputStreamReader : InputStream --> FileInputStream --> InputStreamReader 
+程序处理
+OutputStreamWriter: InputStreamReader.read() --> OutputStreamWriter --> OutputStream

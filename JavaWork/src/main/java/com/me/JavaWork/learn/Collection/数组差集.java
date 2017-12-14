@@ -1,0 +1,27 @@
+package com.me.JavaWork.learn.Collection;
+
+import java.util.ArrayList;
+
+public class 数组差集 {
+
+	public static void main(String[] args) {
+		ArrayList objArray = new ArrayList();
+		ArrayList objArray2 = new ArrayList();
+		ArrayList arrayList = new ArrayList();
+		objArray2.add(0, "common1");
+		objArray2.add(1, "common2");
+		objArray2.add(2, "notcommon");
+		objArray2.add(3, "notcommon1");
+		objArray.add(0, "common1");
+		objArray.add(1, "common2");
+		System.out.println("array1 的元素" + objArray);
+		System.out.println("array2 的元素" + objArray2);
+		System.out.println("是否包含：" + objArray.contains(objArray));
+
+		arrayList.add(objArray.removeAll(objArray2));
+		System.out.println("array1 与 array2 数组差集为：" + objArray);
+		// objArray2.removeAll(objArray);
+
+	}
+
+}
